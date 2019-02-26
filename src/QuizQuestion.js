@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 
 class QuizQuestion extends Component{
+    constructor(props) {
+        super(props);
+    }
     render(){
         return(
             <main>
@@ -9,7 +12,7 @@ class QuizQuestion extends Component{
                 </section>
                 <section className="buttons">
                     <ul>
-                        <li>{this.props.quiz_question.answer_option[0]}</li>
+                        <li>{this.props.quiz_question.answer_options[0]}</li>
                     </ul>
                 </section>
             </main>
